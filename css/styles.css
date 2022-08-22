@@ -39,12 +39,6 @@ ol {
   text-decoration: none;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 .list {
   list-style: none;
 }
@@ -244,7 +238,21 @@ fill: var(--primary-accent-color);
   justify-content: center;
   flex-wrap: wrap;
 }
-
+.skills-item {
+  position: relative;
+}
+.skills-item .title {
+  position: absolute;
+  bottom: 0%;
+  color: var(--secondary-accent-color);
+  width: 100%;
+  padding: 27px 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-size: 14px;
+  line-height: 1.33;
+  text-align: center;
+  text-transform: uppercase;
+}
 /* team styles */
 .section.team {
   background-color: var(--bg-color-light);
@@ -387,7 +395,6 @@ fill: var(--primary-accent-color);
 }
 .exemple-img {
   width: 100%;
-  margin-bottom: 20px;
 }
 .exemple .title {
   color: var(--title-text-color);
@@ -396,12 +403,33 @@ fill: var(--primary-accent-color);
   line-height: 2;
   margin-left: 24px;
   margin-bottom: 4px;
+  margin-top: 20px;
 }
 .exemple .text {
   font-size: 16px;
   line-height: 1.88;
   margin-left: 24px;
   margin-bottom: 20px;
+}
+.exemple-box {
+  position: relative;
+  overflow: hidden;
+}
+.exemple:hover .overlay {
+transform: translateY(-100%);
+
+}
+.exemple .overlay {
+  position: absolute;
+  width: 100%;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--secondary-accent-color);
+  padding: 63px 24px;
+  transition-duration: 300ms;
 }
 
 /* footer styles */
