@@ -244,6 +244,7 @@ fill: var(--primary-accent-color);
 .skills-item .title {
   position: absolute;
   bottom: 0%;
+  left: 0%;
   color: var(--secondary-accent-color);
   width: 100%;
   padding: 27px 0;
@@ -296,10 +297,10 @@ fill: var(--primary-accent-color);
 }
 
 .circle {
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: flex;
 }
 .social-icon {
   fill: var(--primary-icon-color);
@@ -483,4 +484,48 @@ transform: translateY(-100%);
 }
 .footer-social .social-icon {
   fill: var(--secondary-accent-color);
+}
+
+/* modal window styles */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.50)
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: #ffffff;
+}
+.x-box {
+  position: fixed;
+  display: flex;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: rgba(0, 0, 0, 0.1) solid 1px;
+}
+.x-button {
+  width: 18px;
+  height: 18px;
+  margin: auto;
+  fill: #000000;
+}
+.x-box:hover .x-button,
+.x-box:focus .x-button {
+fill: var(--primary-accent-color);
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
