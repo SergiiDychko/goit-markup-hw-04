@@ -113,8 +113,8 @@ body {
 .header-contacts .link:focus {
   color: var(--primary-accent-color);
 }
-.header-link:hover .contacts-icon,
-.header-link:focus .contacts-icon {
+.contacts-link:hover .contacts-icon,
+.contacts-link:focus .contacts-icon {
 fill: var(--primary-accent-color);
 }
 .link.actual {
